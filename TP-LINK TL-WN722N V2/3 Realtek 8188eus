@@ -1,16 +1,3 @@
-
-11:05
-
-
-
-
-Comments
-
-Add a public comment...
-
-
-Pinned by iCyberTech
-iCyberTech
 Step : 1
 
 sudo apt update 
@@ -18,6 +5,9 @@ sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo apt autoremove
 reboot
+
+Step : 2
+
 sudo apt install dkms
 sudo -i
 echo "blacklist r8188eu" > "/etc/modprobe.d/realtek.conf"
@@ -28,6 +18,7 @@ sudo ./dkms-install.sh
 sudo apt autoremove
 sudo reboot
 
+Step : 3
 
 /* To enable Monitor Mode */
 *** Method 1: ******
@@ -39,3 +30,6 @@ iwconfig
 
 /* To check Packet Injection */
 aireplay-ng --test wlan0
+
+If you have a any issue then contact to Mr. Anupam Singh (Unique)
+Whatsapp:- +91 8409420016
