@@ -1,4 +1,41 @@
-Sudo apt update
-Sudo apt upgrade
-Sudo -i
-Coming sone....
+
+11:05
+
+
+
+
+Comments
+
+Add a public comment...
+
+
+Pinned by iCyberTech
+iCyberTech
+Step : 1
+
+sudo apt update 
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt autoremove
+reboot
+sudo apt install dkms
+sudo -i
+echo "blacklist r8188eu" > "/etc/modprobe.d/realtek.conf"
+exit
+git clone https://github.com/aircrack-ng/rtl8188eus
+cd rtl8188eus
+sudo ./dkms-install.sh
+sudo apt autoremove
+sudo reboot
+
+
+/* To enable Monitor Mode */
+*** Method 1: ******
+ifconfig wlan0 down
+airmon-ng check kill
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+iwconfig  
+
+/* To check Packet Injection */
+aireplay-ng --test wlan0
